@@ -1,0 +1,27 @@
+Script started on 2024-11-17 14:03:13-05:00
+bash-4.4$ make
+g++    -c -o project4.o project4.cpp
+g++ -std=c++98 -Wall -c FIFOQueueClass.cpp -o FIFOQueueClass.o
+g++ -std=c++98 -Wall -c LIFOStackClass.cpp -o LIFOStackClass.o
+g++ -std=c++98 -Wall -c SortedListClass.cpp -o SortedListClass.o
+g++ -std=c++98 -Wall -c LinkedNodeClass.cpp -o LinkedNodeClass.o
+g++ project4.o FIFOQueueClass.o LIFOStackClass.o SortedListClass.o LinkedNodeClass.o -o project4.exe
+bash-4.4$ valgrien[K[Knd --leak-check=full ./project4.exe
+==2039399== Memcheck, a memory error detector
+==2039399== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==2039399== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==2039399== Command: ./project4.exe
+==2039399== 
+==2039399== 
+==2039399== HEAP SUMMARY:
+==2039399==     in use at exit: 0 bytes in 0 blocks
+==2039399==   total heap usage: 1 allocs, 1 frees, 72,704 bytes allocated
+==2039399== 
+==2039399== All heap blocks were freed -- no leaks are possible
+==2039399== 
+==2039399== For lists of detected and suppressed errors, rerun with: -s
+==2039399== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+bash-4.4$ exit
+exit
+
+Script done on 2024-11-17 14:03:35-05:00
